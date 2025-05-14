@@ -1,0 +1,21 @@
+Reduced Classes
+
+Accuracy: 0.5405092835426331
+Loss: 1.1369062662124634
+Total:  {'Brick': 154, 'Concrete': 415, 'Other': 86, 'Wood_or_Siding': 209} 
+Correct:  {'Brick': 3, 'Concrete': 313, 'Other': 0, 'Wood_or_Siding': 41}
+
+Regular classes
+
+Accuracy: 0.5381944179534912
+Loss: 1.239669919013977
+Total:  {'Brick': 154, 'Concrete': 415, 'Glass': 16, 'Steel': 40, 'Stone': 30, 'Wood_or_Siding': 209} 
+Correct:  {'Brick': 4, 'Concrete': 309, 'Glass': 0, 'Steel': 0, 'Stone': 0, 'Wood_or_Siding': 40}
+
+HyperTrain
+
+Accuracy: 0.5567129850387573
+Loss: 1.1015324592590332
+Total:  {'Brick': 154, 'Concrete': 415, 'Other': 86, 'Wood_or_Siding': 209} 
+Correct:  {'Brick': 48, 'Concrete': 332, 'Other': 8, 'Wood_or_Siding': 93}
+end

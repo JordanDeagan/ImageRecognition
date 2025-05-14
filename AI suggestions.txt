@@ -1,0 +1,7 @@
+Tensorflow Metal/DirectML
+Colaboratory
+Tensorflow Cloud/Google Cloud
+AutoML
+inception v2/v3
+
+Vision AI App Platform

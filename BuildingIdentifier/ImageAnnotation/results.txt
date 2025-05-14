@@ -1,0 +1,385 @@
+Hyperparameters:
+num_filters1: 32
+kernel1: 4
+num_filters3: 256
+kernel3: 3
+units1: 168
+dense_activation1: relu
+learning_rate: 0.0008433633337952192
+tuner/epochs: 5
+tuner/initial_epoch: 2
+tuner/bracket: 1
+tuner/round: 1
+tuner/trial_id: d12440458ad3816f561ee2e6ba44d45b
+Score: 0.7772727012634277
+Loss: 0.43303751945495605
+Accuracy: 0.8421052694320679
+
+None
+
+
+Best val_accuracy So Far: 0.800000011920929
+
+
+Hyperparameter    |Best Value So Far
+num_filters1      |128
+kernel1           |3
+units1            |112
+dense_activation1 |relu
+learning_rate     |0.00069517
+tuner/epochs      |15
+tuner/initial_e...|5
+tuner/bracket     |1
+tuner/round       |1optimal number of filters in conv_1 layer: 32
+optimal number of kernels in conv_1 layer: 6
+optimal number of filters in conv_2 layer: 32
+optimal number of kernels in conv_2 layer: 4
+optimal number of filters in conv_3 layer: 64
+optimal number of kernels in conv_3 layer: 6
+optimal number of units in dense_1 layer: 464
+optimal activation routine in dense_1 layer: sigmoid
+optimal rate in dropout_1 layer: 0.5
+optimal number of units in dense_2 layer: 192
+optimal activation routine in dense_2 layer: relu
+optimal learning rate: 5.161743428272906e-05
+
+Loss: 1.238194465637207
+Accuracy: 0.5335648059844971
+
+optimal number of filters in conv_1 layer: 32
+optimal number of kernels in conv_1 layer: 6
+optimal number of filters in conv_2 layer: 32
+optimal number of kernels in conv_2 layer: 4
+optimal number of filters in conv_3 layer: 64
+optimal number of kernels in conv_3 layer: 6
+optimal number of units in dense_1 layer: 464
+optimal activation routine in dense_1 layer: sigmoid
+optimal rate in dropout_1 layer: 0.5
+optimal number of units in dense_2 layer: 192
+optimal activation routine in dense_2 layer: relu
+optimal learning rate: 5.161743428272906e-05
+
+Loss: 1.2555326223373413
+Accuracy: 0.5428240895271301
+
+optimal number of filters in conv_1 layer: 96
+optimal number of kernels in conv_1 layer: 3
+optimal number of filters in conv_2 layer: 128
+optimal number of kernels in conv_2 layer: 3
+optimal number of filters in conv_3 layer: 96
+optimal number of kernels in conv_3 layer: 6
+optimal number of units in dense_1 layer: 160
+optimal activation routine in dense_1 layer: sigmoid
+optimal rate in dropout_1 layer: 0.25
+optimal number of units in dense_2 layer: 304
+optimal activation routine in dense_2 layer: sigmoid
+optimal learning rate: 1.6176530973716874e-05
+
+Loss: 1.1998867988586426
+Accuracy: 0.5717592835426331
+
+optimal number of filters in conv_1 layer: 64
+optimal number of kernels in conv_1 layer: 5
+optimal activation routine in conv_1 layer: relu
+optimal number of filters in conv_2 layer: 224
+optimal number of kernels in conv_2 layer: 4
+optimal activation routine in conv_2 layer: tanh
+optimal number of filters in conv_3 layer: 128
+optimal number of kernels in conv_3 layer: 4
+optimal activation routine in conv_3 layer: relu
+optimal number of units in dense_1 layer: 288
+optimal activation routine in dense_1 layer: sigmoid
+optimal rate in dropout_1 layer: 0.2
+optimal number of units in dense_2 layer: 416
+optimal activation routine in dense_2 layer: sigmoid
+optimal rate in dropout_2 layer: 0.1
+optimal learning rate: 5.161743428272906e-05
+
+Loss: 1.1895078420639038
+Accuracy: 0.5578703880310059
+
+optimal number of filters in conv_1 layer: 112
+optimal number of kernels in conv_1 layer: 5
+optimal activation routine in conv_1 layer: tanh
+optimal number of units in dense_1 layer: 416
+optimal activation routine in dense_1 layer: sigmoid
+optimal rate in dropout_1 layer: 0.1
+optimal number of units in dense_2 layer: 352
+optimal activation routine in dense_2 layer: sigmoid
+optimal rate in dropout_2 layer: 0.0
+optimal learning rate: 1.4283793654956332e-05
+
+Loss: 1.3085486888885498
+Accuracy: 0.4826388955116272
+
+optimal rate in random_rotation layer: 0.4
+optimal number of filters in conv_1 layer: 96
+optimal number of kernels in conv_1 layer: 3
+optimal activation routine in conv_1 layer: relu
+optimal number of filters in conv_2 layer: 96
+optimal number of kernels in conv_2 layer: 4
+optimal activation routine in conv_2 layer: relu
+optimal number of filters in conv_3 layer: 256
+optimal number of kernels in conv_3 layer: 3
+optimal activation routine in conv_3 layer: relu
+optimal number of units in dense_1 layer: 480
+optimal activation routine in dense_1 layer: sigmoid
+optimal rate in dropout_1 layer: 0.1
+optimal number of units in dense_2 layer: 416
+optimal activation routine in dense_2 layer: sigmoid
+optimal rate in dropout_2 layer: 0.30000000000000004
+optimal learning rate: 1.4948684422968163e-05
+
+Loss: 1.229367733001709
+Accuracy: 0.5428240895271301
+
+optimal rate in random_zoom layer: 0.4
+optimal number of filters in conv_1 layer: 96
+optimal number of kernels in conv_1 layer: 3
+optimal activation routine in conv_1 layer: relu
+optimal number of filters in conv_2 layer: 96
+optimal number of kernels in conv_2 layer: 4
+optimal activation routine in conv_2 layer: relu
+optimal number of filters in conv_3 layer: 256
+optimal number of kernels in conv_3 layer: 3
+optimal activation routine in conv_3 layer: relu
+optimal number of units in dense_1 layer: 480
+optimal activation routine in dense_1 layer: sigmoid
+optimal rate in dropout_1 layer: 0.1
+optimal number of units in dense_2 layer: 416
+optimal activation routine in dense_2 layer: sigmoid
+optimal rate in dropout_2 layer: 0.30000000000000004
+optimal learning rate: 1.4948684422968163e-05
+
+Loss: 1.2393325567245483
+Accuracy: 0.5335648059844971
+
+optimal rate in random_rotation layer: 0.30000000000000004
+optimal rate in random_zoom layer: 0.30000000000000004
+optimal number of filters in conv_1 layer: 48
+optimal number of kernels in conv_1 layer: 4
+optimal activation routine in conv_1 layer: tanh
+optimal number of filters in conv_2 layer: 128
+optimal number of kernels in conv_2 layer: 5
+optimal activation routine in conv_2 layer: sigmoid
+optimal number of filters in conv_3 layer: 128
+optimal number of kernels in conv_3 layer: 3
+optimal activation routine in conv_3 layer: relu
+optimal number of units in dense_1 layer: 416
+optimal activation routine in dense_1 layer: tanh
+optimal rate in dropout_1 layer: 0.30000000000000004
+optimal number of units in dense_2 layer: 480
+optimal activation routine in dense_2 layer: sigmoid
+optimal rate in dropout_2 layer: 0.4
+optimal learning rate: 1.847865399001616e-05
+
+Loss: 1.2543487548828125
+Accuracy: 0.5150462985038757
+
+optimal rate in random_rotation layer: 0.1
+optimal rate in random_zoom layer: 0.30000000000000004
+optimal rate in dropout_1 layer: 0.30000000000000004
+optimal rate in dropout_2 layer: 0.0
+optimal learning rate: 0.00011951482608846625
+
+Loss: 1.2088627815246582
+Accuracy: 0.5405092835426331
+
+optimal rate in random_rotation layer: 0.1
+optimal rate in random_zoom layer: 0.6
+optimal rate in dropout_1 layer: 0.5
+optimal rate in dropout_2 layer: 0.2
+optimal learning rate: 0.00013994416677080425
+
+Loss: 1.2716896533966064
+Accuracy: 0.5243055820465088
+
+optimal learning rate: 2.304250692421976e-05
+
+Loss: 1.1864326000213623
+Accuracy: 0.5601851940155029
+
+optimal number of units in dense_1 layer: 480
+optimal activation routine in dense_1 layer: tanh
+optimal number of units in dense_2 layer: 416
+optimal activation routine in dense_2 layer: sigmoid
+optimal learning rate: 1.4601687410777089e-05
+
+Loss: 1.1869338750839233
+Accuracy: 0.5543981194496155
+
+optimal number of units in dense_1 layer: 448
+optimal activation routine in dense_1 layer: tanh
+optimal number of units in dense_2 layer: 464
+optimal activation routine in dense_2 layer: sigmoid
+optimal learning rate: 1.4601687410777089e-05
+
+Loss: 1.1849287748336792
+Accuracy: 0.5567129850387573
+
+optimal rate in random_rotation layer: 0.1
+optimal rate in random_zoom layer: 0.4
+optimal number of filters in conv_1 layer: 96
+optimal number of kernels in conv_1 layer: 4
+optimal activation routine in conv_1 layer: relu
+optimal number of filters in conv_2 layer: 224
+optimal number of kernels in conv_2 layer: 4
+optimal activation routine in conv_2 layer: tanh
+optimal number of filters in conv_3 layer: 64
+optimal number of kernels in conv_3 layer: 5
+optimal activation routine in conv_3 layer: sigmoid
+optimal number of units in dense_1 layer: 192
+optimal activation routine in dense_1 layer: sigmoid
+optimal rate in dropout_1 layer: 0.5
+optimal number of units in dense_2 layer: 416
+optimal activation routine in dense_2 layer: sigmoid
+optimal rate in dropout_2 layer: 0.2
+optimal learning rate: 2.8749588530393994e-05
+
+Loss: 1.2128419876098633
+Accuracy: 0.5532407164573669
+
+optimal rate in random_rotation layer: 0.0
+optimal rate in random_zoom layer: 0.5
+optimal number of filters in conv_1 layer: 112
+optimal number of kernels in conv_1 layer: 4
+optimal activation routine in conv_1 layer: tanh
+optimal number of filters in conv_2 layer: 224
+optimal number of kernels in conv_2 layer: 4
+optimal activation routine in conv_2 layer: relu
+optimal number of units in dense_1 layer: 336
+optimal activation routine in dense_1 layer: sigmoid
+optimal rate in dropout_1 layer: 0.6
+optimal number of units in dense_2 layer: 464
+optimal activation routine in dense_2 layer: sigmoid
+optimal rate in dropout_2 layer: 0.1
+optimal learning rate: 2.8592273140953794e-05
+
+Loss: 1.2465777397155762
+Accuracy: 0.5196759104728699
+
+optimal rate in random_rotation layer: 0.2
+optimal rate in random_zoom layer: 0.5
+optimal number of filters in conv_1 layer: 16
+optimal number of kernels in conv_1 layer: 4
+optimal activation routine in conv_1 layer: sigmoid
+optimal number of filters in conv_2 layer: 256
+optimal number of kernels in conv_2 layer: 4
+optimal activation routine in conv_2 layer: relu
+optimal number of filters in conv_3 layer: 320
+optimal number of kernels in conv_3 layer: 4
+optimal activation routine in conv_3 layer: sigmoid
+optimal number of units in dense_1 layer: 320
+optimal activation routine in dense_1 layer: sigmoid
+optimal rate in dropout_1 layer: 0.4
+optimal number of units in dense_2 layer: 400
+optimal activation routine in dense_2 layer: tanh
+optimal rate in dropout_2 layer: 0.1
+optimal learning rate: 1.2038360305964352e-05
+
+Loss: 1.088806390762329
+Accuracy: 0.5555555820465088
+
+optimal rate in random_rotation layer: 0.2
+optimal rate in random_zoom layer: 0.6
+optimal number of filters in conv_1 layer: 48
+optimal number of kernels in conv_1 layer: 4
+optimal activation routine in conv_1 layer: tanh
+optimal number of filters in conv_2 layer: 128
+optimal number of kernels in conv_2 layer: 5
+optimal activation routine in conv_2 layer: sigmoid
+optimal number of filters in conv_3 layer: 128
+optimal number of kernels in conv_3 layer: 3
+optimal activation routine in conv_3 layer: relu
+optimal number of units in dense_1 layer: 336
+optimal activation routine in dense_1 layer: tanh
+optimal rate in dropout_1 layer: 0.6
+optimal number of units in dense_2 layer: 480
+optimal activation routine in dense_2 layer: sigmoid
+optimal rate in dropout_2 layer: 0.2
+optimal learning rate: 1.2962276704549726e-05
+
+Loss: 1.2368470430374146
+Accuracy: 0.5381944179534912
+
+optimal rate in random_rotation layer: 0.30000000000000004
+optimal rate in random_zoom layer: 0.6
+optimal number of filters in conv_1 layer: 96
+optimal number of kernels in conv_1 layer: 4
+optimal activation routine in conv_1 layer: relu
+optimal number of filters in conv_2 layer: 96
+optimal number of kernels in conv_2 layer: 4
+optimal activation routine in conv_2 layer: relu
+optimal number of filters in conv_3 layer: 320
+optimal number of kernels in conv_3 layer: 3
+optimal activation routine in conv_3 layer: sigmoid
+optimal number of units in dense_1 layer: 384
+optimal activation routine in dense_1 layer: sigmoid
+optimal rate in dropout_1 layer: 0.6
+optimal number of units in dense_2 layer: 352
+optimal activation routine in dense_2 layer: tanh
+optimal rate in dropout_2 layer: 0.1
+optimal learning rate: 6.159464457829474e-05
+
+Loss: 1.147372841835022
+Accuracy: 0.5446428656578064
+
+optimal rate in random_rotation layer: 0.1
+optimal rate in random_zoom layer: 0.5
+optimal number of filters in conv_1 layer: 64
+optimal number of kernels in conv_1 layer: 5
+optimal activation routine in conv_1 layer: relu
+optimal number of filters in conv_2 layer: 128
+optimal number of kernels in conv_2 layer: 4
+optimal activation routine in conv_2 layer: relu
+optimal number of filters in conv_3 layer: 192
+optimal number of kernels in conv_3 layer: 5
+optimal activation routine in conv_3 layer: relu
+optimal number of units in dense_1 layer: 288
+optimal activation routine in dense_1 layer: tanh
+optimal rate in dropout_1 layer: 0.7
+optimal number of units in dense_2 layer: 416
+optimal activation routine in dense_2 layer: tanh
+optimal rate in dropout_2 layer: 0.0
+optimal learning rate: 6.550831257553686e-05
+
+Loss: 0.6624938249588013
+Accuracy: 0.640625
+
+optimal rate in random_rotation layer: 0.0
+optimal rate in random_zoom layer: 0.6
+optimal number of filters in conv_1 layer: 80
+optimal number of kernels in conv_1 layer: 5
+optimal activation routine in conv_1 layer: relu
+optimal number of filters in conv_2 layer: 128
+optimal number of kernels in conv_2 layer: 4
+optimal activation routine in conv_2 layer: relu
+optimal rate in dropout_1 layer: 0.5000000000000001
+optimal number of filters in conv_3 layer: 256
+optimal number of kernels in conv_3 layer: 3
+optimal activation routine in conv_3 layer: tanh
+optimal rate in dropout_2 layer: 0.6000000000000001
+optimal number of units in dense_1 layer: 384
+optimal activation routine in dense_1 layer: sigmoid
+Loss: 1.0070472955703735
+Accuracy: 0.5401785969734192
+
+optimal number of filters in conv_1 layer: 64
+optimal number of kernels in conv_1 layer: 3
+optimal activation routine in conv_1 layer: relu
+optimal number of filters in conv_2 layer: 32
+optimal number of kernels in conv_2 layer: 4
+optimal activation routine in conv_2 layer: tanh
+optimal rate in dropout_1 layer: 0.4
+optimal number of filters in conv_3 layer: 96
+optimal number of kernels in conv_3 layer: 4
+optimal activation routine in conv_3 layer: relu
+optimal rate in dropout_2 layer: 0.30000000000000004
+optimal number of units in dense_1 layer: 176
+optimal activation routine in dense_1 layer: tanh
+optimal rate in dropout_3 layer: 0.4
+optimal number of units in dense_2 layer: 128
+optimal activation routine in dense_2 layer: relu
+Loss: 1.1015324592590332
+Accuracy: 0.5567129850387573
+

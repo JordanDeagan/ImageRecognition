@@ -1,0 +1,120 @@
+Building Identifier Project
+**A project to create an image recognition model that can determine the construction**
+**material and use of a building simply by being shown an image of it**
+Authors: Timothy Boe and Taha Karimi
+
+Datasets of interest:
+
+1. SUN database from CSAIL: http://groups.csail.mit.edu/vision/SUN/hierarchy.html
+	-This is the SUN2012.tar.gz file in the BuildingIdentifier folder.
+	-This file contains about 5 images of each of a variety of different buildings,
+	each is already annotated as to what building it is classified as.
+	-Some of these images could be useful, so decided to keep the whole thing for now.
+	-INTEND TO USE
+	
+	NOTE from site: If you find this dataset useful, please cite this paper 
+		(and refer the data as SUN397, SUN2012, or SUN):
+
+	"SUN Database: Large-scale Scene Recognition from Abbey to Zoo". J. Xiao, J. Hays, 
+	K. Ehinger, A. Oliva, and A. Torralba. IEEE Conference on Computer Vision and 
+	Pattern Recognition, 2010.
+
+	http://web.mit.edu/jxiao/Public/publication/2010/CVPR_sun/paper.pdf
+
+2. Drone-View Building Identification from: https://jacky82226.github.io/DVBI/
+	-All images are located in various Dropbox links throughout the page.
+	-Only some of the images under IG-City8 are useful, rest are too zoomed out/wide
+	-NOT USING
+
+3. Caltech 256 from: http://www.vision.caltech.edu/Image_Datasets/Caltech256/
+	-Images in the 256_ObjectCategories.tar in BuildingIdentifier folder.
+	-Only want to use the skyscraper images from this.
+	-NOT USING
+
+	CITATION: Griffin, G. Holub, AD. Perona, P. The Caltech 256. 
+	Caltech Technical Report. The technical report will be available shortly.
+
+4. CityScapes Dataset from: https://www.cityscapes-dataset.com/dataset-overview/
+	-Upon approval and inspection of dataset, I don't believe it is useful at all.
+	-NOT USING
+
+	CITATION: M. Cordts, M. Omran, S. Ramos, T. Rehfeld, M. Enzweiler, 
+	R. Benenson, U. Franke, S. Roth, and B. Schiele, “The Cityscapes 
+	Dataset for Semantic Urban Scene Understanding,” in Proc. of the 
+	IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2016. 
+	[Bibtex]
+
+5. Open Images Dataset V6 from: https://storage.googleapis.com/openimages/web/visualizer/index.html?set=train&type=segmentation&r=false&c=%2Fm%2F079cl
+	-Has infrastructure, bank, office, commercial, theater, garden building,
+	general building, coffee house, work house, outhouse, warehouse, field house,
+	pent house apartment, manor house, house, lighthouse, farmhouse, 
+	opera house, boat house, slaughter house, court house, historic house,
+	police station, pumping station, fire station, train station.
+	-Cannot get full dataset (which is more useful) right now as the only way to 
+	get it is having Google Cloud and using Google Storage Transfer. 
+	-What I can get and will get is the dataset used for bounding boxes (train/val/tst)
+		-will also need to download the labels for that alongside the rest.
+	-NOT USING - the images are not categorized, I would have to search for buildings
+			in a folder of 200,000 imgs where majority aren't buildings.
+
+6. Pascal VOC Datasets from: http://host.robots.ox.ac.uk/pascal/VOC/voc2011/index.html#devkit
+	-Has many years worth of datasets, need to see if any images within it
+	could be useful to us (basically does it have any building images)
+	-Downloaded two years' images and annotations, need to use code to check
+	if annotations have any thing related to buildings/stations/houses/etc.
+	
+	CITATION: @misc{pascal-voc-2011,
+	author = "Everingham, M. and Van~Gool, L. and Williams, C. K. I. and Winn, J. and Zisserman, A.",
+	title = "The {PASCAL} {V}isual {O}bject {C}lasses {C}hallenge 2011 {(VOC2011)} {R}esults",
+	howpublished = "http://www.pascal-network.org/challenges/VOC/voc2011/workshop/index.html"}
+
+7. Places1 and Places2 Datasets, from http://places.csail.mit.edu/user/ and http://places2.csail.mit.edu/:
+	-Dataset that contains a large (millions) of images on over 200 categories of
+	places that people visit, include many different types of buildings.
+	-Also has other places so that if a weird building is found by the camera,
+	it will be more likely to know what it is
+	-USING AS PRIMARY SOURCE
+
+	Citation for Places1: 
+		B. Zhou, A. Lapedriza, J. Xiao, A. Torralba, and A. Oliva. 
+		Learning Deep Features for Scene Recognition using Places Database. 
+		Advances in Neural Information Processing Systems 27 (NIPS), 2014..
+
+	Citation for Places2:
+		Places: A 10 million Image Database for Scene Recognition
+		B. Zhou, A. Lapedriza, A. Khosla, A. Oliva, and A. Torralba
+		IEEE Transactions on Pattern Analysis and Machine Intelligence, 2017
+
+		Bolei Zhou, Aditya Khosla, Agata Lapedriza, Antonio Torralba and Aude Oliva
+		Places: A 10 million Image Database for Scene Recognition.
+		arXiv:1610.02055
+		
+Other Sites:
+
+1. Pixabay - can search any topic to get images for it.
+
+2. Flickr - I believe the same as above.
+
+3. ImageNet - specific searches
+
+4. Picsearch - same
+
+5. Google Images and Street View - Should be useful?
+
+6. Mendeley Datasets: https://data.mendeley.com/research-data/?type=IMAGE&type=SOFTWARE_CODE&search=dataset%20of%20building%20images&page=2
+	-has many datasets/articles/variety of other stuff, it does have some articles on
+	ML for building recognition, although accessing that information usually requires
+	access to the article, and also many of them are aerial images or drone related,
+	which is not useful for us as of now.
+
+BUILDING MY OWN DATASET:
+https://towardsdatascience.com/how-to-create-your-own-image-dataset-for-deep-learning-b53f1c22c443
+
+Notes:
+
+-look into something called 'Clutter' which is used to see if a classifier is
+robust enough to handle images not containing an object category.
+-in addition to augmenting images using the various transformations 
+(rotations, cropping, shifting, zoom, grayscale, etc.), also need to have
+images with different lightings/times of day, seasons, points of view, and
+surrounding objects/obstacles.

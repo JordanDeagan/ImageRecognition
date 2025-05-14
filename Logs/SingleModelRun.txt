@@ -1,0 +1,90 @@
+2022-08-15 16:22:58.997726: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2022-08-15 16:22:58.998293: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+THIS IS THE PROPER KERAS TUNER ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+2.9.1
+Found 7811 files belonging to 6 classes.
+Using 7030 files for training.
+2022-08-15 16:23:09.104595: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'nvcuda.dll'; dlerror: nvcuda.dll not found
+2022-08-15 16:23:09.105386: W tensorflow/stream_executor/cuda/cuda_driver.cc:269] failed call to cuInit: UNKNOWN ERROR (303)
+2022-08-15 16:23:09.109260: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: LZ26JDEAGAN-2
+2022-08-15 16:23:09.109405: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: LZ26JDEAGAN-2
+2022-08-15 16:23:09.111946: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Found 7811 files belonging to 6 classes.
+Using 781 files for validation.
+Found 864 files belonging to 6 classes.
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ random_flip (RandomFlip)    (None, 256, 256, 3)       0         
+                                                                 
+ random_rotation (RandomRota  (None, 256, 256, 3)      0         
+ tion)                                                           
+                                                                 
+ random_zoom (RandomZoom)    (None, 256, 256, 3)       0         
+                                                                 
+ rescaling (Rescaling)       (None, 256, 256, 3)       0         
+                                                                 
+ conv2d (Conv2D)             (None, 256, 256, 16)      448       
+                                                                 
+ max_pooling2d (MaxPooling2D  (None, 128, 128, 16)     0         
+ )                                                               
+                                                                 
+ conv2d_1 (Conv2D)           (None, 128, 128, 32)      4640      
+                                                                 
+ max_pooling2d_1 (MaxPooling  (None, 64, 64, 32)       0         
+ 2D)                                                             
+                                                                 
+ dropout (Dropout)           (None, 64, 64, 32)        0         
+                                                                 
+ conv2d_2 (Conv2D)           (None, 64, 64, 64)        18496     
+                                                                 
+ max_pooling2d_2 (MaxPooling  (None, 32, 32, 64)       0         
+ 2D)                                                             
+                                                                 
+ dropout_1 (Dropout)         (None, 32, 32, 64)        0         
+                                                                 
+ flatten (Flatten)           (None, 65536)             0         
+                                                                 
+ dense (Dense)               (None, 128)               8388736   
+                                                                 
+ dropout_2 (Dropout)         (None, 128)               0         
+                                                                 
+ dense_1 (Dense)             (None, 128)               16512     
+                                                                 
+ dense_2 (Dense)             (None, 6)                 774       
+                                                                 
+=================================================================
+Total params: 8,429,606
+Trainable params: 8,429,606
+Non-trainable params: 0
+_________________________________________________________________
+Epoch 1/20
+2022-08-15 16:23:11.220219: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+2022-08-15 16:23:11.891734: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+  1/220 [..............................] - ETA: 9:27 - loss: 1.7790 - accuracy: 0.1875  2/220 [..............................] - ETA: 3:03 - loss: 4.5557 - accuracy: 0.3281  3/220 [..............................] - ETA: 2:55 - loss: 4.3596 - accuracy: 0.3125  4/220 [..............................] - ETA: 2:54 - loss: 4.1961 - accuracy: 0.2812  5/220 [..............................] - ETA: 2:51 - loss: 3.6595 - accuracy: 0.3125  6/220 [..............................] - ETA: 2:49 - loss: 3.3441 - accuracy: 0.3229  7/220 [..............................] - ETA: 2:49 - loss: 3.1076 - accuracy: 0.3438  8/220 [>.............................] - ETA: 2:48 - loss: 2.8973 - accuracy: 0.3711  9/220 [>.............................] - ETA: 2:47 - loss: 2.7452 - accuracy: 0.3681 10/220 [>.............................] - ETA: 2:45 - loss: 2.6135 - accuracy: 0.3875 11/220 [>.............................] - ETA: 2:44 - loss: 2.5049 - accuracy: 0.4006 12/220 [>.............................] - ETA: 2:44 - loss: 2.4207 - accuracy: 0.3958 13/220 [>.............................] - ETA: 2:43 - loss: 2.3502 - accuracy: 0.3870 14/220 [>.............................] - ETA: 2:43 - loss: 2.2875 - accuracy: 0.3906 15/220 [=>............................] - ETA: 2:42 - loss: 2.2226 - accuracy: 0.3917 16/220 [=>............................] - ETA: 2:43 - loss: 2.1608 - accuracy: 0.39262022-08-15 16:23:25.285854: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+ 17/220 [=>............................] - ETA: 2:43 - loss: 2.1533 - accuracy: 0.3897 18/220 [=>............................] - ETA: 2:43 - loss: 2.1027 - accuracy: 0.3958 19/220 [=>............................] - ETA: 2:43 - loss: 2.0701 - accuracy: 0.3914 20/220 [=>............................] - ETA: 2:43 - loss: 2.0307 - accuracy: 0.3875 21/220 [=>............................] - ETA: 2:44 - loss: 1.9997 - accuracy: 0.38692022-08-15 16:23:29.450264: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+Traceback (most recent call last):
+  File "C:\Users\jdeagan\OneDrive - Environmental Protection Agency (EPA)\Profile\Desktop\Projects\AI\ArtificialIntel\BuildingIdentifier\ImageAnnotation\DeaganModels\KerasTunerDeagan.py", line 226, in <module>
+    history = model.fit(
+  File "C:\Users\jdeagan\AppData\Roaming\Python\Python310\site-packages\keras\utils\traceback_utils.py", line 64, in error_handler
+    return fn(*args, **kwargs)
+  File "C:\Users\jdeagan\AppData\Roaming\Python\Python310\site-packages\keras\engine\training.py", line 1409, in fit
+    tmp_logs = self.train_function(iterator)
+  File "C:\Users\jdeagan\AppData\Roaming\Python\Python310\site-packages\tensorflow\python\util\traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "C:\Users\jdeagan\AppData\Roaming\Python\Python310\site-packages\tensorflow\python\eager\def_function.py", line 915, in __call__
+    result = self._call(*args, **kwds)
+  File "C:\Users\jdeagan\AppData\Roaming\Python\Python310\site-packages\tensorflow\python\eager\def_function.py", line 947, in _call
+    return self._stateless_fn(*args, **kwds)  # pylint: disable=not-callable
+  File "C:\Users\jdeagan\AppData\Roaming\Python\Python310\site-packages\tensorflow\python\eager\function.py", line 2453, in __call__
+    return graph_function._call_flat(
+  File "C:\Users\jdeagan\AppData\Roaming\Python\Python310\site-packages\tensorflow\python\eager\function.py", line 1860, in _call_flat
+    return self._build_call_outputs(self._inference_function.call(
+  File "C:\Users\jdeagan\AppData\Roaming\Python\Python310\site-packages\tensorflow\python\eager\function.py", line 497, in call
+    outputs = execute.execute(
+  File "C:\Users\jdeagan\AppData\Roaming\Python\Python310\site-packages\tensorflow\python\eager\execute.py", line 54, in quick_execute
+    tensors = pywrap_tfe.TFE_Py_Execute(ctx._handle, device_name, op_name,
+KeyboardInterrupt
+2022-08-15 16:23:30.385213: W tensorflow/core/kernels/data/cache_dataset_ops.cc:856] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.

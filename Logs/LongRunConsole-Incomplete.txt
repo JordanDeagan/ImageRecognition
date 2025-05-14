@@ -1,0 +1,102 @@
+2022-11-10 10:46:10.367395: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2022-11-10 10:46:10.367858: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+THIS IS THE PROPER KERAS TUNER ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+2.9.1
+Found 7811 files belonging to 4 classes.
+Using 7030 files for training.
+2022-11-10 10:46:23.872805: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'nvcuda.dll'; dlerror: nvcuda.dll not found
+2022-11-10 10:46:23.872928: W tensorflow/stream_executor/cuda/cuda_driver.cc:269] failed call to cuInit: UNKNOWN ERROR (303)
+2022-11-10 10:46:23.880494: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: LZ26JDEAGAN-2
+2022-11-10 10:46:23.880765: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: LZ26JDEAGAN-2
+2022-11-10 10:46:23.884243: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Found 7811 files belonging to 4 classes.
+Using 781 files for validation.
+Found 864 files belonging to 4 classes.
+BELOW tuner
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Search: Running Trial #1
+
+Value             |Best Value So Far |Hyperparameter
+48                |?                 |num_filters1
+3                 |?                 |kernel1
+sigmoid           |?                 |conv_activation1
+112               |?                 |num_filters2
+4                 |?                 |kernel2
+relu              |?                 |conv_activation2
+0.3               |?                 |dropout1
+80                |?                 |num_filters3
+4                 |?                 |kernel3
+tanh              |?                 |conv_activation3
+0.2               |?                 |dropout2
+112               |?                 |units1
+tanh              |?                 |dense_activation1
+0.3               |?                 |dropout3
+192               |?                 |units2
+tanh              |?                 |dense_activation2
+4.7547e-05        |?                 |learning_rate
+4                 |?                 |tuner/epochs
+0                 |?                 |tuner/initial_epoch
+2                 |?                 |tuner/bracket
+0                 |?                 |tuner/round
+
+Epoch 1/4
+2022-11-10 10:46:36.994180: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+2022-11-10 10:46:38.387512: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:390] Filling up shuffle buffer (this may take a while): 65 of 256
+2022-11-10 10:46:47.709433: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:390] Filling up shuffle buffer (this may take a while): 141 of 256
+2022-11-10 10:46:57.482806: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:390] Filling up shuffle buffer (this may take a while): 209 of 256
+2022-11-10 10:47:05.291461: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:415] Shuffle buffer filled.
+2022-11-10 10:47:07.896542: W tensorflow/core/lib/png/png_io.cc:88] PNG warning: iCCP: known incorrect sRGB profile
+Traceback (most recent call last):
+  File "C:\Users\jdeagan\OneDrive - Environmental Protection Agency (EPA)\Profile\Desktop\Projects\AI\ArtificialIntel\BuildingIdentifier\ImageAnnotation\HyperTunerDeagan.py", line 386, in <module>
+    tuner.search(x=train_img,
+  File "C:\Users\jdeagan\AppData\Roaming\Python\Python310\site-packages\keras_tuner\engine\base_tuner.py", line 183, in search
+    results = self.run_trial(trial, *fit_args, **fit_kwargs)
+  File "C:\Users\jdeagan\AppData\Roaming\Python\Python310\site-packages\keras_tuner\tuners\hyperband.py", line 384, in run_trial
+    return super(Hyperband, self).run_trial(trial, *fit_args, **fit_kwargs)
+  File "C:\Users\jdeagan\AppData\Roaming\Python\Python310\site-packages\keras_tuner\engine\tuner.py", line 295, in run_trial
+    obj_value = self._build_and_fit_model(trial, *args, **copied_kwargs)
+  File "C:\Users\jdeagan\AppData\Roaming\Python\Python310\site-packages\keras_tuner\engine\tuner.py", line 222, in _build_and_fit_model
+    results = self.hypermodel.fit(hp, model, *args, **kwargs)
+  File "C:\Users\jdeagan\AppData\Roaming\Python\Python310\site-packages\keras_tuner\engine\hypermodel.py", line 140, in fit
+    return model.fit(*args, **kwargs)
+  File "C:\Users\jdeagan\AppData\Roaming\Python\Python310\site-packages\keras\utils\traceback_utils.py", line 64, in error_handler
+    return fn(*args, **kwargs)
+  File "C:\Users\jdeagan\AppData\Roaming\Python\Python310\site-packages\keras\engine\training.py", line 1409, in fit
+    tmp_logs = self.train_function(iterator)
+  File "C:\Users\jdeagan\AppData\Roaming\Python\Python310\site-packages\tensorflow\python\util\traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "C:\Users\jdeagan\AppData\Roaming\Python\Python310\site-packages\tensorflow\python\eager\def_function.py", line 915, in __call__
+    result = self._call(*args, **kwds)
+  File "C:\Users\jdeagan\AppData\Roaming\Python\Python310\site-packages\tensorflow\python\eager\def_function.py", line 980, in _call
+    return self._stateless_fn(*args, **kwds)
+  File "C:\Users\jdeagan\AppData\Roaming\Python\Python310\site-packages\tensorflow\python\eager\function.py", line 2453, in __call__
+    return graph_function._call_flat(
+  File "C:\Users\jdeagan\AppData\Roaming\Python\Python310\site-packages\tensorflow\python\eager\function.py", line 1860, in _call_flat
+    return self._build_call_outputs(self._inference_function.call(
+  File "C:\Users\jdeagan\AppData\Roaming\Python\Python310\site-packages\tensorflow\python\eager\function.py", line 497, in call
+    outputs = execute.execute(
+  File "C:\Users\jdeagan\AppData\Roaming\Python\Python310\site-packages\tensorflow\python\eager\execute.py", line 54, in quick_execute
+    tensors = pywrap_tfe.TFE_Py_Execute(ctx._handle, device_name, op_name,
+KeyboardInterrupt
+2022-11-10 10:47:15.291066: W tensorflow/core/kernels/data/cache_dataset_ops.cc:856] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
